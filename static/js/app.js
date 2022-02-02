@@ -59,7 +59,7 @@ function updateFilters() {
     let filteredData = tableData
     // matches the filter values
   
-    // 9. Loop through all of the filters and keep any data that
+    // 9. Loop through all of the filters and keep any data that matches filter values
     // loop through dictionary by key instead of by iterating with i as you would for arrays
     for (var key in filters) {
 
