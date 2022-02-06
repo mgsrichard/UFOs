@@ -51,51 +51,43 @@ function updateFilters() {
     filterTable();
   
   }
-  
+  console.log(Object.entries(filters))
   // 7. Use this function to filter the table when data is entered.
   function filterTable() {
   
     // 8. Set the filtered data to the tableData.
     let filteredData = tableData
-    // matches the filter values
-  
+
     // 9. Loop through all of the filters and keep any data that matches filter values
     // loop through dictionary by key instead of by iterating with i as you would for arrays
-    Object.entries(filters).forEach(function([key,value]) {
-    
-        //check key value to determine the filtering needed
-        if (key === "datetime") {
-            // Apply `filter` to the table data to only keep the
-            // rows where the `datetime` value matches the filter value
-            filteredData = filteredData.filter(row => row.datetime === value);
-          };
-        if (key === "city") {
-            // Apply `filter` to the table data to only keep the
-            // rows where the `city` value matches the filter value
-            filteredData = filteredData.filter(row => row.city === value);
-          };
-        if (key === "state") {
-            // Apply `filter` to the table data to only keep the
-            // rows where the `city` value matches the filter value
-            filteredData = filteredData.filter(row => row.state === value);
-          };
-        if (key === "country") {
-            // Apply `filter` to the table data to only keep the
-            // rows where the `city` value matches the filter value
-            filteredData = filteredData.filter(row => row.country === value);
-          };
-        if (key === "shape") {
-            // Apply `filter` to the table data to only keep the
-            // rows where the `city` value matches the filter value
-            filteredData = filteredData.filter(row => row.shape === value);
-          };
-    })
-    
-  
+    Object.entries(filters).forEach(function([filterId,elementValue]) {
+
+      //loop through each row of data looking to see if any of the keys match the filterId (the key value of the filter item)
+        Object.entries(filteredData).forEach(function(row) {
+          //console.log(row);
+          Object.entries(row).forEach(function([rowId,data]) {
+            //console.log(data)
+            Object.entries(data).forEach(function([key,value]){
+              if (filterId === key && elementValue === value) {
+                console.log(key)
+                yesFilter = true
+                })
+              }
+              
+            })
+            
+          })
+        })
+    }
+    )
+     
+       
     // 10. Finally, rebuild the table using the filtered data
+    
     buildTable(filteredData);
     
   }
+
   
   // 2. Attach an event to listen for changes to each filter
   

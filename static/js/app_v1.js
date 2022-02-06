@@ -63,6 +63,10 @@ function updateFilters() {
     // loop through dictionary by key instead of by iterating with i as you would for arrays
     Object.entries(filters).forEach(function([key,value]) {
     
+
+        //set value to a non permanent variable, and one that will work in all if statements
+        //let value = filters[key]
+
         //check key value to determine the filtering needed
         if (key === "datetime") {
             // Apply `filter` to the table data to only keep the
@@ -89,7 +93,7 @@ function updateFilters() {
             // rows where the `city` value matches the filter value
             filteredData = filteredData.filter(row => row.shape === value);
           };
-    })
+    }
     
   
     // 10. Finally, rebuild the table using the filtered data
