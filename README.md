@@ -20,30 +20,13 @@ The search is accomplished through the filter search box. You can enter date, ci
 
 ![filter box picture](https://github.com/mgsrichard/UFOs/blob/main/filter_box_image.png)
 
-
-### Table reset
-To reset the table and start a new search, go back to the top of the page and click on "UFO Sightings" in the top bar.  If you don't reset the search, the page will continue to search on the already filtered data from your last search.  
-
-
-![UFO sightings circled picture](https://github.com/mgsrichard/UFOs/blob/main/UFOs_sightings_circled_image.png)
-
-
-### Exceptions to reset requirement
-There are a couple of situations where you wouldn't need to reset the page, but generally it's better if you reset to make sure you're getting what you think you are getting.
-
-  - Exception 1: You are narrowing a search that you just made. For example, you entered 1/9/2010 but there are a lot of results, and so you enter a specific state to narrow the list. Here's what that looks like:
- 
- 
- ![side by side date and date plus image](https://github.com/mgsrichard/UFOs/blob/main/exception_1_side_by_side.png)
- 
- 
-  - Exception 2: You have only entered criteria in one box since your last reset, and you want to search for a different criteria in the same category.  For example, you can enter 'ca' for California, then change it to 'va' for Virginia and the results will be accurate. Here's what that looks like:
-
-
-
-![side by side change the same box](https://github.com/mgsrichard/UFOs/blob/main/Exception_2_side_by_side.png)
+You can sort the data by one or more criteria.  Every time you fill in a field, the table will update, with each additional field entered resulting in a more narrowed list of matching results. Additionally, if you delete any of the search terms the table updates again.  Here's what it looks like when you have entered several search criteria:
 
 
 
 ## Summary
-This website works well for filtering the data from the table.  It has a clean look and it is fairly obvious how to start your search. However, there are two major issues that could be improved in future versions of the page. Firstly, we ought to move the reset function to be below the filter box and put a button there labeled "Reset". That would be a much more intuitive way for the page to operate and would likely save users much confusion.  Secondly, the text entered in the boxes currently has to be lowercase, and countries and states have to be lowercase 2 letter abbreviations. We ought to change the programming to allow more loose matchups: for example, by ignoring upper/lowercase and by recognizing state and country names (and not only the abbreviations.)
+This website works well for filtering the data from the table.  It has a clean look and it is fairly obvious how to start your search. However, there is an issue that could be improved in future versions of the page. The issue is that the text entered in the boxes currently has to be lowercase, and countries and states have to be lowercase 2 letter abbreviations. We ought to change the programming to allow more loose matchups: for example, by ignoring upper/lowercase and by recognizing state and country names (and not only the abbreviations.) Ideas to further develop this website would include the following:
+  - add the functionality to the page for readers to submit their own UFO sightings
+  - add an article search for articles relating to UFOs from the web generally or from news sources that Dana likes
+  - allow users to comment on the UFO sightings in the list. Maybe someone out there can provide more information about these events!
+  - add google maps feature that allows the user to map where sightings happened and look for patterns
