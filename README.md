@@ -3,11 +3,11 @@
 Overview of Project
 
 ## Overview
-This week we are following Dana as she writes an article on UFO sightings. She has a large JavaScript file of UFO sightings as part of her research. Once her article is complete, she would like to publish this list of UFO sightings online with her article, and post the data in a JavaScript table that can be filtered. During the modules this week, we set up the webpage to display her article and the table to filter the UFO sightings by date. For the challenge, we are expanding the functionality of the UFO sightings table to have more filtering options. The updated table now filters on date, city, state, country, and shape.
+Starting with a large JavaScript file of UFO sightings, I created a web based JavaScript table that can be filtered by date, city, state, country, and shape. Also included is an article on UFOs.
 
 
 ## Results
-Our webpage has a really nice look, with an X-Files vibe. Here's what users will see when they load it:
+The webpage has a really nice look, with an X-Files vibe. Here's what users will see when they load it:
 
 
 ### Original load look
